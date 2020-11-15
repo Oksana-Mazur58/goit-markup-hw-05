@@ -101,19 +101,17 @@ body {
 .site-nav .current:hover, 
 .site-nav .current:focus{
   color: var(--accent);
-  opacity: 1;
+  opacity: 1;}
  
-}
-
-.item-nav{
+.current{
   position: relative;
   
 }
+
 .current::after{
   position: absolute;
-  bottom: 0px;
+  bottom: -8px;
   right: 0px;
-  opacity: 0;
   content: "";
   display: block;
   width: 100%;
@@ -122,10 +120,11 @@ body {
   border-radius: 20px;
   z-index: 55;
   transition: opacity 250ms ;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
-.item-nav .current:hover::after{
-  opacity: 1;
+.item-nav .current:hover::after,
+.item-nav .current:focus::after{
+ color: var(--accent);
   transition-duration: 250ms ;
 }
 /*Contacts*/
