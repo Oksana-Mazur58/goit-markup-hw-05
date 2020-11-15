@@ -90,6 +90,8 @@ body {
   line-height: 1.14px;
   letter-spacing: 0.02em;
   text-decoration: none;
+   transition-duration: 250ms ;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 
 }
 .site-nav .link {
@@ -100,6 +102,7 @@ body {
 .site-nav .current:focus{
   color: var(--accent);
   opacity: 1;
+ 
 }
 
 .item-nav{
@@ -118,9 +121,12 @@ body {
   background-color: var(--accent);
   border-radius: 20px;
   z-index: 55;
+  transition: opacity 250ms ;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .item-nav .current:hover::after{
   opacity: 1;
+  transition-duration: 250ms ;
 }
 /*Contacts*/
 .contact{
@@ -152,14 +158,19 @@ body {
 
 .contact .link {
   color: var(--primary-text-color);
+  transition-duration: 250ms ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .contact .link:focus,
 .contact .link:hover {
   color: var(--accent);
+  
 }
 .link{
   fill: var(--primary-text-color);
+  transition-duration: 520ms ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .link:hover .contact-nav-svg,
 .link:focus .contact-nav-svg{
@@ -383,6 +394,8 @@ padding-top: 27px
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
+  transition-duration: 250ms ;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   
 }
 .social-item{
@@ -397,14 +410,17 @@ margin-right: 0;
   width: 20px;
   height: 20px;
   color: currentColor;
+  transition-duration: 250ms ;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .social-titel:hover,
 .social-titel:focus {
   background-color: var(--accent);
-}
+}  
 .social-titel:hover .social-icon,
 .social-titel:focus .social-icon{
   fill: var(--white);
+  
 }
 /* Our customers */
 .customers{
@@ -423,6 +439,8 @@ margin-right: 0;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
+  transition-duration: 250ms ;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .customers-list{
   margin-right: 30px;
@@ -432,15 +450,19 @@ margin-right: 0;
   margin-right: 0px;
 }
 .customers-icon{
-  fill: #afb1b8
+  fill: #afb1b8;
+  transition-duration: 250ms ;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .customers-link:hover, 
 .customers-link:focus  {
   border-color: var(--accent);
+  transition-duration: 250ms ;
 }
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
   fill: var(--accent);
+  transition-duration: 250ms ;
 }
 
 /*Footer*/
@@ -503,7 +525,9 @@ margin-bottom: 0;
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-duration: 250ms ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .social-icon-footer{
   width: 20px;
@@ -521,6 +545,7 @@ margin-bottom: 0;
 .social-title-footer:hover,
 .social-title-footer:focus{
   background-color: var(--accent);
+  transition-duration: 250ms ;
 }
 .footer-tatel{
 font-size: 14px;
@@ -572,6 +597,8 @@ text-transform: uppercase;
   line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
+  transition-duration: 250ms ;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   
 }
 
@@ -579,6 +606,7 @@ text-transform: uppercase;
 .portolio-button:focus{
   background: var(--accent);
   color: var(--white);
+  transition-duration: 250ms ;
 
 
 }
@@ -593,10 +621,13 @@ text-transform: uppercase;
   margin-right: 30px;
   margin-top: 30px;
   flex-basis : calc(100% / 3 - 30px);
+  transition-duration: 250ms ;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   
 }
 .port-img{
   position: relative;
+  
 }
 
 .port-img-text{
@@ -617,6 +648,8 @@ text-transform: uppercase;
   letter-spacing: 0.03em;
   text-align: left;
   padding: 63px 24px;
+  transform: opacityY(-100%);
+  
 
 
 }
@@ -624,8 +657,10 @@ text-transform: uppercase;
 .portf-item:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.port-img-text:hover{
+.port-img-text:hover {
   opacity: 1;
+  transform: opacityY(100%);
+  
 }
 .portf-foto-description{
   border: 1px solid #EEEEEE;
@@ -675,17 +710,17 @@ text-transform: uppercase;
 }
 .modal-svg{
   display: block;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border:none;
-    padding: 0;
-    background-color:#FFFFFF;
-    background-image: url(../Image/close\ \(1\).png);
-    background-size: contain;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border:none;
+  padding: 0;
+  background-color:#FFFFFF;
+  background-image: url(../Image/close\ \(1\).png);
+  background-size: contain;
  
  
 }
