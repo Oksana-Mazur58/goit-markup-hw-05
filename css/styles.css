@@ -624,7 +624,7 @@ text-transform: uppercase;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   
 }
-.port-img{
+.portfolio-link{
   position: relative;
   
 }
@@ -647,7 +647,7 @@ text-transform: uppercase;
   letter-spacing: 0.03em;
   text-align: left;
   padding: 63px 24px;
-  transform: opacityY(-100%);
+  transform: translateY(-100%);
   
 
 
@@ -656,9 +656,10 @@ text-transform: uppercase;
 .portf-item:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.port-img-text:hover {
+.port-img-text:hover,
+.port-img-text:focus {
   opacity: 1;
-  transform: opacityY(100%);
+  transform: translateY(100%);
   
 }
 .portf-foto-description{
