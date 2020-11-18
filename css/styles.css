@@ -711,7 +711,7 @@ text-transform: uppercase;
   opacity: 1;
   transform: translateY(0);
   transition-duration:  var(--time-duration);
-  transition-timing-function: var(--timing-function); ;;
+  transition-timing-function: var(--timing-function);
 }
 .portf-item:hover .port-img-text{
   opacity: 1;
