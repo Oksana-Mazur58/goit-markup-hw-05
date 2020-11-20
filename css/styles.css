@@ -460,27 +460,27 @@ margin-right: 0;
 .customers-list:last-child{
   margin-right: 0px;
 }
-.customers-icon:nth-child(1){
+.icon-one{
 width: 44px;
 height: 49px;
 }
-.customers-icon:nth-child(2){
+.icon-two{
 width: 40px;
 height: 52px;
 }
-.customers-icon:nth-child(3){
+.icon-three{
 width: 41px;
 height: 42px;
 }
-.customers-icon:nth-child(4){
+.icon-four{
 width: 79px;
 height: 42px;
 }
-.customers-icon:nth-child(5){
+.icon-five{
 width: 59px;
 height: 47px;
 }
-.customers-icon:nth-child(6){
+.icon-six{
 width: 90px;
 height: 46px;
 }
@@ -659,9 +659,11 @@ text-transform: uppercase;
   flex-basis : calc(100% / 3 - 30px);
   
   
+  
 }
 .port-img{
   position: relative;
+  overflow: hidden;
   
   
 }
